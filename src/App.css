@@ -1,0 +1,29 @@
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls > div {
+  margin: 10px 0;
+}
+
+button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+}
