@@ -1,29 +1,68 @@
-
+/* Main app container, centers the content and adds padding */
 .App {
   text-align: center;
-  padding: 20px;
+  padding: 25px; /* Increased padding for more breathing room */
+  background-color: #f7f7f7; /* Subtle background color for better contrast */
 }
 
+/* Controls section styling, adds margin at the bottom */
 .controls {
-  margin-bottom: 20px;
+  margin-bottom: 25px; /* Increased margin to better separate controls from content */
 }
 
+/* Individual control elements */
 .controls > div {
-  margin: 10px 0;
+  margin: 12px 0; /* Slightly increased vertical margin to space out control elements */
 }
 
+/* Button styling: applies margin, padding, and font-size */
 button {
-  margin: 0 5px;
-  padding: 10px 15px;
-  font-size: 16px;
+  margin: 0 7px; /* Increased horizontal margin between buttons for better spacing */
+  padding: 12px 18px; /* Increased padding for larger clickable area */
+  font-size: 16px; /* Keeping the font size at a readable level */
+  border-radius: 5px; /* Added rounded corners to buttons */
+  background-color: #007bff; /* Changed button background to blue for better visibility */
+  color: white; /* White text for contrast on blue background */
+  border: none; /* Removed default button border */
+  cursor: pointer; /* Show pointer on hover for better UX */
 }
 
+/* Hover effect for buttons */
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover to indicate interaction */
+}
+
+/* Select dropdown styling */
 select {
-  padding: 5px;
-  font-size: 16px;
+  padding: 6px; /* Slightly increased padding for more comfortable selection */
+  font-size: 16px; /* Keeping the font size consistent with the buttons */
+  border-radius: 4px; /* Added slight rounding to the dropdown */
+  border: 1px solid #ccc; /* Added light border for a more defined look */
+  background-color: #fff; /* Ensures a clean white background for the dropdown */
 }
 
+/* Paragraph text styling */
 p {
-  font-size: 16px;
-  color: #555;
+  font-size: 16px; /* Base font size for readability */
+  color: #333; /* Darkened the paragraph text color for better readability */
+  line-height: 1.5; /* Added line height for better text readability */
+  margin: 10px 0; /* Added vertical margin for space between paragraphs */
 }
+
+/* Adding media query for better responsiveness on smaller screens */
+@media (max-width: 600px) {
+  button {
+    font-size: 14px; /* Slightly reduce button font size on smaller screens */
+    padding: 10px 12px; /* Reduce padding for better fit on small screens */
+  }
+
+  select {
+    font-size: 14px; /* Reduce font size in dropdowns for smaller screens */
+    padding: 5px; /* Adjust padding for small screens */
+  }
+
+  p {
+    font-size: 14px; /* Reduce paragraph font size for smaller devices */
+  }
+}
+
